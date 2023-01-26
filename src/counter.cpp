@@ -9,11 +9,11 @@ COUNTER::COUNTER(int32_t _counter) {
   this->defCounter = _counter;
 }
 
-void COUNTER::increment() {
-  this->counter++;
+void COUNTER::increment(int32_t step) {
+  this->counter = this->counter + step;
 }
-void COUNTER::decrement() {
-  this->counter--;
+void COUNTER::decrement(int32_t step) {
+  this->counter= this->counter - step;
 }
 int32_t COUNTER::getCounter() {
   return counter;

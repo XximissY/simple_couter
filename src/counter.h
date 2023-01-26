@@ -11,8 +11,8 @@ private:
 public:
   COUNTER(int32_t _counter = 0);
   int32_t getCounter();
-  void increment();
-  void decrement();
+  void increment(int32_t step = 1);
+  void decrement(int32_t step = 1);
   void reset();
 };
 

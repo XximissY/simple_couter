@@ -10,11 +10,11 @@ The COUNTER class is an Arduino library that provides a simple counter functiona
 
 This is the class constructor, which is used to create an object of the class. The constructor takes an optional parameter `_counter`, which is used to set the initial value of the counter. If no value is provided, the counter is initialized to 0.
 
-#### `void increment()`
+#### `void increment(int32_t step = 1)`
 
 This function increments the value of the counter by 1.
 
-#### `void decrement()`
+#### `void decrement(int32_t step = 1)`
 
 This function decrements the value of the counter by 1.
 
@@ -58,9 +58,9 @@ void setup() {
 }
 
 void loop() {
-  myCounter.increment();
+  myCounter.increment(100); // increment the counter by 100
   Serial.println(myCounter.getCounter());
-  myCounter.decrement();
+  myCounter.decrement(10); // decrement the counter by 10
   Serial.println(myCounter.getCounter());
   myCounter.reset();
   Serial.println(myCounter.getCounter());
