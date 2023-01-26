@@ -1,0 +1,7 @@
+COUNTER
+defCounter
+counter
+increment
+decrement
+getCounter
+reset
